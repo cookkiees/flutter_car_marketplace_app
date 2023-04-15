@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
 import 'package:get/get.dart';
-import '../../../routings/app_routers.dart';
 import '../auth_controller.dart';
 import '../widgets/default_buttoon_widget.dart';
 import '../widgets/default_textformfield_widget.dart';
@@ -9,8 +9,8 @@ import '../widgets/normal_button_widget.dart';
 import '../widgets/richtext_button_widget.dart';
 import '../widgets/title_widget.dart';
 
-class SignInPage extends GetView<AuthController> {
-  const SignInPage({Key? key}) : super(key: key);
+class SignUpPage extends GetView<AuthController> {
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class SignInPage extends GetView<AuthController> {
               children: [
                 Image.asset("assets/images/mclaren-supercar.png"),
                 const SizedBox(height: 32),
-                const TitleWidget(title: "Login to Your Account"),
+                const TitleWidget(title: "Create Your Account"),
                 const SizedBox(height: 32),
                 const DefaultTextFormFieldWidget(
                   icons: "assets/icons/mail-1.svg",
@@ -83,25 +83,20 @@ class SignInPage extends GetView<AuthController> {
                     ),
                     const Text(
                       "Remember me",
-                      style: TextStyle(fontWeight: FontWeight.w500),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                      ),
                     )
                   ],
                 ),
                 const SizedBox(height: 32),
-                const DefaultButtonWidget(title: "Sign in"),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    "Forgot the password?",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                ),
-                const SizedBox(height: 8),
+                const DefaultButtonWidget(title: "Sign up"),
+                const SizedBox(height: 32),
                 const DividerTextWidget(
                   title: "OR CONTINUE WITH",
                   centerFlex: 3,
                 ),
-                const SizedBox(height: 24),
+                const SizedBox(height: 32),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: const [
@@ -116,10 +111,11 @@ class SignInPage extends GetView<AuthController> {
                     )
                   ],
                 ),
+                const SizedBox(height: 24),
                 RichTextButtonWidget(
-                  title: "Don't have an account?",
-                  subtitle: " Sign up",
-                  onPressed: () => Get.toNamed(AppRouters.signUp),
+                  title: "Already have an account?",
+                  subtitle: " Sign in",
+                  onPressed: () => Get.toNamed(AppRouters.signIn),
                 )
               ],
             ),

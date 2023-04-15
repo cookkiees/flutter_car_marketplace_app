@@ -16,7 +16,7 @@ class RichTextButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(),
-      onPressed: () {},
+      onPressed: onPressed,
       child: RichText(
         text: TextSpan(
           children: <TextSpan>[

@@ -1,7 +1,8 @@
-import 'package:flutter_car_marketplace_app/app/modules/auth/auth_binding.dart';
-import 'package:flutter_car_marketplace_app/app/modules/auth/auth_page.dart';
-import 'package:flutter_car_marketplace_app/app/modules/auth/signin/signin_page.dart';
 import 'package:get/get.dart';
+import '../modules/auth/auth_binding.dart';
+import '../modules/auth/auth_page.dart';
+import '../modules/auth/signin/signin_page.dart';
+import '../modules/auth/signup/signup_page.dart';
 import '../modules/onboarding/onboarding_screen.dart';
 import '../modules/onboarding/onborading_binding.dart';
 import 'app_routers.dart';
@@ -21,8 +22,13 @@ class AppPages {
       binding: AuthBinding(),
     ),
     GetPage(
-      name: AppRouters.login,
+      name: AppRouters.signIn,
       page: () => const SignInPage(),
+      binding: AuthBinding(),
+    ),
+    GetPage(
+      name: AppRouters.signUp,
+      page: () => const SignUpPage(),
       binding: AuthBinding(),
     ),
   ];

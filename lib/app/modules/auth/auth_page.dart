@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_car_marketplace_app/app/config/size_config.dart';
-import 'package:flutter_car_marketplace_app/app/modules/auth/auth_controller.dart';
-import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
+
 import 'package:get/get.dart';
 
+import '../../config/size_config.dart';
+import '../../routings/app_routers.dart';
+import 'auth_controller.dart';
 import 'widgets/button_continue_widget.dart';
 import 'widgets/default_buttoon_widget.dart';
 import 'widgets/divider_text_widget.dart';
@@ -73,11 +74,12 @@ class AuthPage extends GetView<AuthController> {
                 ),
                 DefaultButtonWidget(
                   title: 'Sign in with password',
-                  onPressed: () => Get.toNamed(AppRouters.login),
+                  onPressed: () => Get.toNamed(AppRouters.signIn),
                 ),
-                const RichTextButtonWidget(
+                RichTextButtonWidget(
                   title: "Don't have an account?",
                   subtitle: " Sign up",
+                  onPressed: () => Get.toNamed(AppRouters.signUp),
                 )
               ],
             ),
