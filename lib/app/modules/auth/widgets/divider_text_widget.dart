@@ -25,6 +25,7 @@ class DividerTextWidget extends StatelessWidget {
           child: Text(
             title,
             textAlign: TextAlign.center,
+            style: const TextStyle(fontSize: 12),
           ),
         ),
         Expanded(

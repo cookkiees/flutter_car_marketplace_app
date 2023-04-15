@@ -22,8 +22,8 @@ class RichTextButtonWidget extends StatelessWidget {
           children: <TextSpan>[
             TextSpan(
               text: title,
-              style: TextStyle(
-                  fontWeight: FontWeight.w500, color: Colors.grey.shade500),
+              style: const TextStyle(
+                  fontWeight: FontWeight.w300, color: Colors.black),
             ),
             TextSpan(
               text: subtitle,
