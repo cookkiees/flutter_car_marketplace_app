@@ -6,6 +6,8 @@ import '../modules/auth/auth_page.dart';
 import '../modules/auth/forgot&resetpassword/forgot_reset_password.dart';
 import '../modules/auth/signin/signin_page.dart';
 import '../modules/auth/signup/signup_page.dart';
+import '../modules/main/main_binding.dart';
+import '../modules/main/main_page.dart';
 import '../modules/onboarding/onboarding_screen.dart';
 import '../modules/onboarding/onborading_binding.dart';
 import 'app_routers.dart';
@@ -48,6 +50,11 @@ class AppPages {
       name: AppRouters.createNewPassword,
       page: () => const CreateNewPasswordPage(),
       binding: AuthBinding(),
+    ),
+    GetPage(
+      name: AppRouters.main,
+      page: () => const MainPage(),
+      binding: MainBinding(),
     ),
   ];
 }
