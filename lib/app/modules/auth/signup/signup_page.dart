@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../auth_controller.dart';
 import '../widgets/appbar_widget.dart';
 import '../widgets/default_buttoon_widget.dart';
-import '../widgets/default_textformfield_widget.dart';
+import '../../components/default_textformfield_widget.dart';
 import '../widgets/divider_text_widget.dart';
 import '../widgets/normal_button_widget.dart';
 import '../widgets/richtext_button_widget.dart';
@@ -26,7 +26,7 @@ class SignUpPage extends GetView<AuthController> {
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Column(
               children: [
-                Image.asset("assets/images/mclaren-supercar.png"),
+                Image.asset("assets/images/camaro-sports.png"),
                 const SizedBox(height: 32),
                 const TitleWidget(title: "Create Your Account"),
                 const SizedBox(height: 32),

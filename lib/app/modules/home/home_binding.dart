@@ -1,11 +1,9 @@
 import 'package:flutter_car_marketplace_app/app/modules/home/home_controller.dart';
-import 'package:flutter_car_marketplace_app/app/modules/main/main_controller.dart';
 import 'package:get/get.dart';
 
-class MainBinding implements Bindings {
+class HomeBinding implements Bindings {
   @override
   void dependencies() {
-    Get.put(MainController());
     Get.put(HomeController());
   }
 }

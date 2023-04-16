@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_car_marketplace_app/app/modules/auth/auth_controller.dart';
 import 'package:flutter_car_marketplace_app/app/modules/auth/widgets/checkbox_widget.dart';
 import 'package:flutter_car_marketplace_app/app/modules/auth/widgets/default_buttoon_widget.dart';
-import 'package:flutter_car_marketplace_app/app/modules/auth/widgets/default_textformfield_widget.dart';
+import 'package:flutter_car_marketplace_app/app/modules/components/default_textformfield_widget.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
