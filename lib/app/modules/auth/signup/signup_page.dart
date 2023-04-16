@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
 import 'package:get/get.dart';
 import '../auth_controller.dart';
+import '../widgets/appbar_widget.dart';
 import '../widgets/default_buttoon_widget.dart';
 import '../widgets/default_textformfield_widget.dart';
 import '../widgets/divider_text_widget.dart';
@@ -16,18 +17,8 @@ class SignUpPage extends GetView<AuthController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-          onPressed: () => Get.back(),
-          icon: const Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-          ),
-        ),
-        actions: const [],
-      ),
+      appBar: const PreferredSize(
+          preferredSize: Size(double.infinity, 60), child: AppBarWidget()),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(16.0),

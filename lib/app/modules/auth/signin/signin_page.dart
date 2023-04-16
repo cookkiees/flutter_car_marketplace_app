@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../routings/app_routers.dart';
 import '../auth_controller.dart';
+import '../widgets/appbar_widget.dart';
+import '../widgets/checkbox_widget.dart';
 import '../widgets/default_buttoon_widget.dart';
 import '../widgets/default_textformfield_widget.dart';
 import '../widgets/divider_text_widget.dart';
@@ -16,18 +18,8 @@ class SignInPage extends GetView<AuthController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-          onPressed: () => Get.back(),
-          icon: const Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-          ),
-        ),
-        actions: const [],
-      ),
+      appBar: const PreferredSize(
+          preferredSize: Size(double.infinity, 60), child: AppBarWidget()),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(16.0),
@@ -70,27 +62,11 @@ class SignInPage extends GetView<AuthController> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                Row(
-                  children: [
-                    Obx(
-                      () => Checkbox(
-                        value: controller.isChecked.value,
-                        activeColor: Colors.black,
-                        onChanged: (value) {
-                          controller.isChecked.value = value!;
-                        },
-                      ),
-                    ),
-                    const Text(
-                      "Remember me",
-                      style: TextStyle(fontWeight: FontWeight.w500),
-                    )
-                  ],
-                ),
+                const CheckBoxWidget(),
                 const SizedBox(height: 32),
                 const DefaultButtonWidget(title: "Sign in"),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.toNamed(AppRouters.forgotResetPassword),
                   child: const Text(
                     "Forgot the password?",
                     style: TextStyle(color: Colors.black),

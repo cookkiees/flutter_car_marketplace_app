@@ -16,4 +16,23 @@ class AuthController extends GetxController {
   void onFocusChange(hasFocus) {
     focusNode.value = hasFocus;
   }
+
+  TextEditingController verifyController = TextEditingController();
+
+  final verifyFocusNode = FocusNode();
+
+  @override
+  void onClose() {
+    verifyController.dispose();
+
+    super.onClose();
+    verifyFocusNode.dispose();
+  }
+
+  List<String> iconResetPassword = [
+    "assets/icons/chat-1.svg",
+    "assets/icons/mail-1.svg"
+  ];
+
+  List<String> viaResetPassword = ["via SMS", "via Email"];
 }
