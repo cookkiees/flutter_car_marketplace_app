@@ -64,7 +64,12 @@ class SignInPage extends GetView<AuthController> {
                 const SizedBox(height: 8),
                 const CheckBoxWidget(),
                 const SizedBox(height: 32),
-                const DefaultButtonWidget(title: "Sign in"),
+                DefaultButtonWidget(
+                  title: "Sign in",
+                  onPressed: () => Get.toNamed(
+                    AppRouters.main,
+                  ),
+                ),
                 TextButton(
                   onPressed: () => Get.toNamed(AppRouters.forgotResetPassword),
                   child: const Text(
