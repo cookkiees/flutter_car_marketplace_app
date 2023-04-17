@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import '../../../routings/app_routers.dart';
 import '../auth_controller.dart';
-import '../widgets/appbar_widget.dart';
+import '../../components/appbar_widget.dart';
 import '../widgets/default_buttoon_widget.dart';
 
 class ForgotResetPasswordPage extends GetView<AuthController> {

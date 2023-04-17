@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
 import 'package:get/get.dart';
 import '../auth_controller.dart';
-import '../widgets/appbar_widget.dart';
+import '../../components/appbar_widget.dart';
 import '../widgets/default_buttoon_widget.dart';
 import '../../components/default_textformfield_widget.dart';
 import '../widgets/divider_text_widget.dart';

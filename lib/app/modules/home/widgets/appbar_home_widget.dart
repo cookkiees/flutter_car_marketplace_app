@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_car_marketplace_app/app/modules/components/default_textformfield_widget.dart';
 import 'package:flutter_car_marketplace_app/app/modules/home/home_controller.dart';
+import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
@@ -42,7 +43,7 @@ class AppbarHomeWidget extends GetView<HomeController> {
       actions: [
         IconButton(
           splashRadius: 20,
-          onPressed: () {},
+          onPressed: () => Get.toNamed(AppRouters.notifications),
           icon: SvgPicture.asset(
             "assets/icons/bell.svg",
             height: 28,

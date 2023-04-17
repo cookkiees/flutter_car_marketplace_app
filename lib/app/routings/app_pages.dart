@@ -1,6 +1,5 @@
 import 'package:flutter_car_marketplace_app/app/modules/auth/forgot&resetpassword/create_new_password_page.dart';
 import 'package:flutter_car_marketplace_app/app/modules/auth/forgot&resetpassword/verify_page.dart';
-
 import 'package:get/get.dart';
 import '../modules/auth/auth_binding.dart';
 import '../modules/auth/auth_page.dart';
@@ -9,6 +8,7 @@ import '../modules/auth/signin/signin_page.dart';
 import '../modules/auth/signup/signup_page.dart';
 import '../modules/home/home_binding.dart';
 import '../modules/home/home_page.dart';
+import '../modules/home/notifications/notifications_page.dart';
 import '../modules/main/main_binding.dart';
 import '../modules/main/main_page.dart';
 import '../modules/onboarding/onboarding_screen.dart';
@@ -62,6 +62,11 @@ class AppPages {
     GetPage(
       name: AppRouters.home,
       page: () => const HomePage(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: AppRouters.notifications,
+      page: () => const NotificationsPage(),
       binding: HomeBinding(),
     ),
   ];

@@ -24,9 +24,9 @@ class HomeController extends GetxController {
 
   List<String> image = [
     "assets/images/camaro-sports.png",
-    "assets/images/camaro-sports copy.png",
-    "assets/images/camaro-sports copy 2.png",
-    "assets/images/camaro-sports copy 3.png",
+    "assets/images/lmclaren-supercar.png",
+    "assets/images/sedan-series.png",
+    "assets/images/ferarri-sports.png",
   ];
 
   List<String> logo = [

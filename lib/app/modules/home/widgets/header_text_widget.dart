@@ -8,7 +8,7 @@ class HeaderTextWidget extends StatelessWidget {
   });
 
   final String title;
-  final String trailing;
+  final Widget trailing;
 
   @override
   Widget build(BuildContext context) {
@@ -18,21 +18,11 @@ class HeaderTextWidget extends StatelessWidget {
         Text(
           title,
           style: const TextStyle(
-            fontSize: 16,
+            fontSize: 17,
             fontWeight: FontWeight.bold,
           ),
         ),
-        TextButton(
-          onPressed: () {},
-          child: Text(
-            trailing,
-            style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
-            ),
-          ),
-        ),
+        trailing,
       ],
     );
   }

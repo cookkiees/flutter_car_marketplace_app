@@ -7,7 +7,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
-import '../widgets/appbar_widget.dart';
+import '../../components/appbar_widget.dart';
 
 class CreateNewPasswordPage extends GetView<AuthController> {
   const CreateNewPasswordPage({super.key});

@@ -35,7 +35,6 @@ class SpecialOffersSCarouselSliderWidget extends GetView<HomeController> {
             builder: (BuildContext context) {
               return Container(
                 width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.symmetric(horizontal: 5.0),
                 decoration: BoxDecoration(
                   color: Colors.grey.shade200,
                   borderRadius: BorderRadius.circular(16.0),
@@ -73,7 +72,7 @@ class SpecialOffersSCarouselSliderWidget extends GetView<HomeController> {
                       ),
                     ),
                     Positioned(
-                      right: 0,
+                      right: 8,
                       top: 30,
                       child: Image.asset(
                         image,

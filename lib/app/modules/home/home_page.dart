@@ -24,10 +24,19 @@ class HomePage extends GetView<HomeController> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              const HeaderTextWidget(
-                title: "Special Offers",
-                trailing: "See All",
-              ),
+              HeaderTextWidget(
+                  title: "Special Offers",
+                  trailing: TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "See All",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  )),
               const SpecialOffersSCarouselSliderWidget(),
               const SizedBox(height: 10.0),
               Obx(

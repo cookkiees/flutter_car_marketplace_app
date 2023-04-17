@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../routings/app_routers.dart';
 import '../auth_controller.dart';
-import '../widgets/appbar_widget.dart';
+import '../../components/appbar_widget.dart';
 import '../widgets/checkbox_widget.dart';
 import '../widgets/default_buttoon_widget.dart';
 import '../../components/default_textformfield_widget.dart';
