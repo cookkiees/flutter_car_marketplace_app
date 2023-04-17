@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_car_marketplace_app/app/modules/components/default_textformfield_widget.dart';
-import 'package:flutter_car_marketplace_app/app/modules/home/home_controller.dart';
-import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import '../../../routings/app_routers.dart';
+import '../../components/default_textformfield_widget.dart';
+import '../home_controller.dart';
+import 'search_filter_widget.dart';
 
 class AppbarHomeWidget extends GetView<HomeController> {
   const AppbarHomeWidget({
@@ -53,6 +54,7 @@ class AppbarHomeWidget extends GetView<HomeController> {
               splashRadius: 20,
               onPressed: () {
                 controller.toggleFavorites();
+                Get.toNamed(AppRouters.myWishlist);
               },
               icon: controller.isFavorite.value
                   ? SvgPicture.asset(
@@ -77,11 +79,18 @@ class AppbarHomeWidget extends GetView<HomeController> {
             child: DefaultTextFormFieldWidget(
               icons: "assets/icons/search.svg",
               hintText: "Search",
-              suffixIcon: SvgPicture.asset(
-                "assets/icons/filter.svg",
-                height: 30,
-                width: 30,
-                fit: BoxFit.none,
+              suffixIcon: IconButton(
+                onPressed: () {
+                  Get.dialog(const AlertDialog(
+                    content: SearchFilterWidget(),
+                  ));
+                },
+                icon: SvgPicture.asset(
+                  "assets/icons/filter.svg",
+                  height: 30,
+                  width: 30,
+                  fit: BoxFit.none,
+                ),
               ),
             ),
           ),

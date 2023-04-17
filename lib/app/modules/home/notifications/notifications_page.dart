@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_car_marketplace_app/app/modules/home/widgets/header_text_widget.dart';
-
 import '../../components/appbar_widget.dart';
+import '../widgets/header_text_widget.dart';
 import '../widgets/notification_box_widget.dart';
 
 class NotificationsPage extends StatelessWidget {

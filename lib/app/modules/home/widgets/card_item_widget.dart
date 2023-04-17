@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-
 import '../home_controller.dart';
 
 class CardItemWidget extends GetView<HomeController> {
@@ -11,11 +10,13 @@ class CardItemWidget extends GetView<HomeController> {
     required this.onPressed,
     required this.icon,
     required this.name,
+    this.padding,
   });
   final String image;
   final void Function()? onPressed;
   final Widget icon;
   final String name;
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +26,7 @@ class CardItemWidget extends GetView<HomeController> {
         Container(
           height: 150,
           width: 200,
+          padding: padding,
           margin: const EdgeInsets.symmetric(horizontal: 8),
           decoration: BoxDecoration(
             color: Colors.grey.shade200,

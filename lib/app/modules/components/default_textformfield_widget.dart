@@ -5,16 +5,17 @@ import 'package:get/get.dart';
 import '../auth/auth_controller.dart';
 
 class DefaultTextFormFieldWidget extends GetView<AuthController> {
-  const DefaultTextFormFieldWidget({
-    super.key,
-    required this.icons,
-    required this.hintText,
-    this.suffixIcon,
-  });
+  const DefaultTextFormFieldWidget(
+      {super.key,
+      required this.icons,
+      required this.hintText,
+      this.suffixIcon,
+      this.onPressed});
 
   final String icons;
   final String hintText;
   final Widget? suffixIcon;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -37,20 +38,24 @@ class DefaultTextFormFieldWidget extends GetView<AuthController> {
                 borderRadius: BorderRadius.all(Radius.circular(12))),
             suffixIcon: suffixIcon,
             prefixIcon: Obx(
-              () => SvgPicture.asset(
-                icons,
-                height: 30,
-                width: 30,
-                fit: BoxFit.none,
-                colorFilter: controller.focusNode.value
-                    ? const ColorFilter.mode(
-                        Colors.black,
-                        BlendMode.srcIn,
-                      )
-                    : const ColorFilter.mode(
-                        Colors.grey,
-                        BlendMode.srcIn,
-                      ),
+              () => IconButton(
+                splashRadius: 20,
+                onPressed: onPressed,
+                icon: SvgPicture.asset(
+                  icons,
+                  height: 30,
+                  width: 30,
+                  fit: BoxFit.none,
+                  colorFilter: controller.focusNode.value
+                      ? const ColorFilter.mode(
+                          Colors.black,
+                          BlendMode.srcIn,
+                        )
+                      : const ColorFilter.mode(
+                          Colors.grey,
+                          BlendMode.srcIn,
+                        ),
+                ),
               ),
             ),
           ),

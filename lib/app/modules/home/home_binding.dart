@@ -1,5 +1,6 @@
-import 'package:flutter_car_marketplace_app/app/modules/home/home_controller.dart';
 import 'package:get/get.dart';
+
+import 'home_controller.dart';
 
 class HomeBinding implements Bindings {
   @override
