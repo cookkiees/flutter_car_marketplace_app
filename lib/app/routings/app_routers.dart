@@ -13,4 +13,5 @@ abstract class AppRouters {
   static const myWishlist = '/myWishlist';
   static const specialOffers = '/specialOffers';
   static const topDeals = '/topDeals';
+  static const details = '/details';
 }

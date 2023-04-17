@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import '../../components/car_condition_widget.dart';
 import '../home_controller.dart';
 
 class CardItemWidget extends GetView<HomeController> {
@@ -49,7 +51,9 @@ class CardItemWidget extends GetView<HomeController> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     minimumSize: const Size(200, 150)),
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(AppRouters.details);
+                },
                 child: null,
               ),
               Positioned(
@@ -88,18 +92,8 @@ class CardItemWidget extends GetView<HomeController> {
                       color: Colors.black54,
                     ),
                   ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        color: Colors.grey.shade200,
-                        borderRadius: BorderRadius.circular(4)),
-                    child: Text(
-                      "New",
-                      style:
-                          TextStyle(color: Colors.grey.shade900, fontSize: 12),
-                    ),
+                  const CarConditionWidget(
+                    title: "New",
                   )
                 ],
               ),
