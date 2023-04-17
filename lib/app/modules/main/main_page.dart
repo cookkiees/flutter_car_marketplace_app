@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_car_marketplace_app/app/modules/home/home_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
@@ -16,7 +17,7 @@ class MainPage extends StatelessWidget {
         body: IndexedStack(
           index: controller.tabIndex,
           children: [
-            Container(),
+            const HomePage(),
             Container(),
             Container(),
             Container(),

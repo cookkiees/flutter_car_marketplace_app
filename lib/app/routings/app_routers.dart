@@ -9,4 +9,8 @@ abstract class AppRouters {
   static const verify = '/verify';
   static const main = '/main';
   static const home = '/home';
+  static const notifications = '/notifications';
+  static const myWishlist = '/myWishlist';
+  static const specialOffers = '/specialOffers';
+  static const topDeals = '/topDeals';
 }

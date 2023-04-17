@@ -7,4 +7,10 @@ class MainController extends GetxController {
     tabIndex = index;
     update();
   }
+
+  var isBottomSheetOpen = false.obs;
+
+  void toggleBottomSheet() {
+    isBottomSheetOpen.value = !isBottomSheetOpen.value;
+  }
 }

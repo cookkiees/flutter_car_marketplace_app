@@ -34,7 +34,7 @@ class AuthPage extends GetView<AuthController> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset("assets/images/mclaren-supercar.png"),
+                Image.asset("assets/images/camaro-sports.png"),
                 const SizedBox(
                   height: 50,
                 ),

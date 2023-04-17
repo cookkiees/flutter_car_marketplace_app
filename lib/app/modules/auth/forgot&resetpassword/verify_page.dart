@@ -6,7 +6,7 @@ import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
 import 'package:get/get.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
-import '../widgets/appbar_widget.dart';
+import '../../components/appbar_widget.dart';
 
 class VerifyPage extends GetView<AuthController> {
   const VerifyPage({super.key});
