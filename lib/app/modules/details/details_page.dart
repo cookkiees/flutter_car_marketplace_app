@@ -198,7 +198,7 @@ class DetailsPage extends GetView<DetailsController> {
                     Expanded(
                       child: DefaultButtonWidget(
                         title: "Make on Offer",
-                        onPressed: () {},
+                        onPressed: () => Get.toNamed(AppRouters.makeAnOffer),
                       ),
                     )
                   ],
