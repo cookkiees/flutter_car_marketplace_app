@@ -43,6 +43,7 @@ class MyWishlistPage extends GetView<HomeController> {
                             },
                             icon: const Icon(Icons.close, color: Colors.black),
                           ),
+                          obscureText: false,
                         ),
                       ),
                     )

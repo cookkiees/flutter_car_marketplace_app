@@ -24,11 +24,12 @@ class DetailsController extends GetxController {
     update();
   }
 
-  List<Color> color = [
-    Colors.purple,
-    Colors.amber,
-    Colors.blue,
-    Colors.red,
-    Colors.green
+  List<String> camaro = [
+    "assets/images/red-camaro.png",
+    "assets/images/camaro-sports.png",
+    "assets/images/blue-camaro.png",
+    "assets/images/black-camaro.png",
+    "assets/images/silver-camaro.png",
+    "assets/images/white-camaro.png",
   ];
 }

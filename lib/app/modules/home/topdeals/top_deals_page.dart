@@ -31,6 +31,7 @@ class TopDealsPage extends GetView<HomeController> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: DefaultTextFormFieldWidget(
+                          obscureText: false,
                           onPressed: () {
                             controller.toggleBottomSheet();
                           },
