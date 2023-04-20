@@ -20,4 +20,5 @@ abstract class AppRouters {
   static const order = '/order';
   static const inbox = '/inbox';
   static const wallet = '/wallet';
+  static const profile = '/profile';
 }
