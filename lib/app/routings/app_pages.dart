@@ -1,3 +1,5 @@
+import 'package:flutter_car_marketplace_app/app/modules/order/order_binding.dart';
+import 'package:flutter_car_marketplace_app/app/modules/order/order_page.dart';
 import 'package:get/get.dart';
 import '../modules/auth/auth_binding.dart';
 import '../modules/auth/auth_page.dart';
@@ -111,6 +113,11 @@ class AppPages {
       name: AppRouters.makeAnOffer,
       page: () => const MakeAnOfferPage(),
       binding: DetailsBinding(),
+    ),
+    GetPage(
+      name: AppRouters.order,
+      page: () => const OrderPage(),
+      binding: OrderBinding(),
     ),
   ];
 }

@@ -4,6 +4,7 @@ import 'package:flutter_car_marketplace_app/app/modules/profile/views/Address/sh
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import '../../../../../components/appbar_widget.dart';
+import '../../../../../components/box_car_order_widget.dart';
 import '../../../../../home/widgets/header_text_widget.dart';
 import '../../../../widgets/box_shipping.dart';
 import '../../../../widgets/table_widget.dart';
@@ -65,67 +66,10 @@ class CheckoutOfferPage extends StatelessWidget {
                   trailing: SizedBox(),
                 ),
               ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-                child: Container(
-                  height: 150,
-                  width: MediaQuery.of(context).size.width,
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 150,
-                        height: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.grey.shade200,
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                        child: Image.asset(
-                          "assets/images/camaro-sports.png",
-                        ),
-                      ),
-                      const SizedBox(width: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          const Text(
-                            "Camaro Sports",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),
-                          ),
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const CircleAvatar(
-                                radius: 10.0,
-                                backgroundColor: Colors.yellow,
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                "Yellow",
-                                style: TextStyle(color: Colors.grey.shade500),
-                              )
-                            ],
-                          ),
-                          const Text(
-                            "\$ 170.000",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+                child: BoxCarOrderWidget(
+                  visible: false,
                 ),
               ),
               const Padding(
