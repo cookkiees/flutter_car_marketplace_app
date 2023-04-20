@@ -2,6 +2,8 @@ import 'package:flutter_car_marketplace_app/app/modules/inbox/Inbox_binding.dart
 import 'package:flutter_car_marketplace_app/app/modules/inbox/inbox_page.dart';
 import 'package:flutter_car_marketplace_app/app/modules/order/order_binding.dart';
 import 'package:flutter_car_marketplace_app/app/modules/order/order_page.dart';
+import 'package:flutter_car_marketplace_app/app/modules/profile/profile_binding.dart';
+import 'package:flutter_car_marketplace_app/app/modules/profile/profile_page.dart';
 import 'package:flutter_car_marketplace_app/app/modules/wallet/wallet_binding.dart';
 import 'package:flutter_car_marketplace_app/app/modules/wallet/wallet_page.dart';
 import 'package:get/get.dart';
@@ -132,6 +134,11 @@ class AppPages {
       name: AppRouters.wallet,
       page: () => const WalletPage(),
       binding: WalletBinding(),
+    ),
+    GetPage(
+      name: AppRouters.profile,
+      page: () => const ProfilePage(),
+      binding: ProfileBinding(),
     ),
   ];
 }
