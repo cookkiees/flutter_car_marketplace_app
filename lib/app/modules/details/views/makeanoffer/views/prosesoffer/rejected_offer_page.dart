@@ -55,7 +55,7 @@ class RejectedOfferPage extends StatelessWidget {
             const SizedBox(height: 16),
             DefaultButtonWidget(
               title: "Back to  home",
-              onPressed: () => Get.toNamed(AppRouters.home),
+              onPressed: () => Get.toNamed(AppRouters.main),
             ),
             const SizedBox(height: 16),
           ],
