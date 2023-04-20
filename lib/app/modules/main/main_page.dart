@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_car_marketplace_app/app/modules/home/home_page.dart';
 import 'package:flutter_car_marketplace_app/app/modules/inbox/inbox_page.dart';
 import 'package:flutter_car_marketplace_app/app/modules/order/order_page.dart';
+import 'package:flutter_car_marketplace_app/app/modules/wallet/wallet_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
@@ -22,7 +23,7 @@ class MainPage extends StatelessWidget {
             const HomePage(),
             const OrderPage(),
             const InboxPage(),
-            Container(),
+            const WalletPage(),
             Container(),
           ],
         ),
