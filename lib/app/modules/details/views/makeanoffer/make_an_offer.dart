@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_car_marketplace_app/app/modules/auth/widgets/default_buttoon_widget.dart';
 import 'package:flutter_car_marketplace_app/app/modules/details/details_controller.dart';
+import 'package:flutter_car_marketplace_app/app/modules/details/views/makeanoffer/views/prosesoffer/proses_offer_page.dart';
 import 'package:get/get.dart';
 
 import '../../../../utils/my_colors.dart';
@@ -13,6 +14,7 @@ class MakeAnOfferPage extends GetView<DetailsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
         preferredSize: const Size(double.infinity, 60),
         child: AppBarWidget(
@@ -160,7 +162,7 @@ class MakeAnOfferPage extends GetView<DetailsController> {
               const SizedBox(height: 32),
               DefaultButtonWidget(
                 title: "Send Offer",
-                onPressed: () {},
+                onPressed: () => Get.to(() => const ProsesOfferPage()),
               )
             ],
           ),

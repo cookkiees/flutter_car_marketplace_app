@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'views/makeanoffer/views/offer_amount.dart';
+import 'views/makeanoffer/views/prosesoffer/offer_amount.dart';
 
 class DetailsController extends GetxController {
   var isFavorite = false.obs;
@@ -25,6 +25,8 @@ class DetailsController extends GetxController {
     tabIndex.value = index;
     update();
   }
+
+  List<String> titleAddress = ["Home", "Office", "Apparment", "Parent's House"];
 
   List<String> camaro = [
     "assets/images/red-camaro.png",

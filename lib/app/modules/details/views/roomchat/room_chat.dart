@@ -3,7 +3,7 @@ import 'package:flutter_car_marketplace_app/app/modules/components/default_textf
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../components/appbar_widget.dart';
-import 'widgets/box_chat_widget.dart';
+import '../../widgets/box_chat_widget.dart';
 
 class RoomChatPage extends StatelessWidget {
   const RoomChatPage({super.key});
