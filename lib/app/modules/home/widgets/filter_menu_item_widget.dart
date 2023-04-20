@@ -34,6 +34,7 @@ class FilterMenuItemWidget extends GetView<HomeController> {
           child: Row(
             children: [
               widget,
+              const SizedBox(width: 8),
               Text(
                 title,
                 style: TextStyle(fontWeight: FontWeight.w500, color: textColor),

@@ -32,16 +32,18 @@ class SignInPage extends GetView<AuthController> {
                 const TitleWidget(title: "Login to Your Account"),
                 const SizedBox(height: 32),
                 const DefaultTextFormFieldWidget(
+                  obscureText: false,
                   icons: "assets/icons/mail-1.svg",
                   hintText: " Email",
                 ),
                 const SizedBox(height: 16),
-                DefaultTextFormFieldWidget(
-                  icons: "assets/icons/lock.svg",
-                  hintText: " Password",
-                  suffixIcon: Focus(
-                    child: Obx(
-                      () => IconButton(
+                Obx(
+                  () => DefaultTextFormFieldWidget(
+                    obscureText: controller.obscureText.value,
+                    icons: "assets/icons/lock.svg",
+                    hintText: " Password",
+                    suffixIcon: Focus(
+                      child: IconButton(
                         splashRadius: 1,
                         onPressed: () => controller.obscureText.toggle(),
                         icon: controller.obscureText.value

@@ -77,6 +77,7 @@ class AppbarHomeWidget extends GetView<HomeController> {
               horizontal: 16,
             ),
             child: DefaultTextFormFieldWidget(
+              obscureText: false,
               icons: "assets/icons/search.svg",
               hintText: "Search",
               suffixIcon: IconButton(

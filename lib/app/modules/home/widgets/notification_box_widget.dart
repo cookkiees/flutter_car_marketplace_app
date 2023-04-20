@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_car_marketplace_app/app/modules/details/views/makeanoffer/views/prosesoffer/accepted_offer_page.dart';
+import 'package:flutter_car_marketplace_app/app/modules/details/views/makeanoffer/views/prosesoffer/rejected_offer_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class NorificationBoxWidget extends StatelessWidget {
   const NorificationBoxWidget({
@@ -72,7 +75,8 @@ class NorificationBoxWidget extends StatelessWidget {
               Visibility(
                 visible: visible,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const AcceptedOfferPage()),
+                  onLongPress: () => Get.to(() => const RejectedOfferPage()),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.transparent,
                     foregroundColor: Colors.grey.shade500,

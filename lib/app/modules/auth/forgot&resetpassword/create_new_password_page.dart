@@ -46,6 +46,7 @@ class CreateNewPasswordPage extends GetView<AuthController> {
               ),
               const SizedBox(height: 32),
               DefaultTextFormFieldWidget(
+                obscureText: controller.obscureText.value,
                 icons: "assets/icons/lock.svg",
                 hintText: "New Password",
                 suffixIcon: Focus(
@@ -71,12 +72,13 @@ class CreateNewPasswordPage extends GetView<AuthController> {
                 ),
               ),
               const SizedBox(height: 32),
-              DefaultTextFormFieldWidget(
-                icons: "assets/icons/lock.svg",
-                hintText: "New Password",
-                suffixIcon: Focus(
-                  child: Obx(
-                    () => IconButton(
+              Obx(
+                () => DefaultTextFormFieldWidget(
+                  obscureText: controller.obscureText.value,
+                  icons: "assets/icons/lock.svg",
+                  hintText: "New Password",
+                  suffixIcon: Focus(
+                    child: IconButton(
                       splashRadius: 1,
                       onPressed: () => controller.obscureText.toggle(),
                       icon: controller.obscureText.value

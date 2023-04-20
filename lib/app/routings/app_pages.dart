@@ -1,17 +1,22 @@
-import 'package:flutter_car_marketplace_app/app/modules/auth/forgot&resetpassword/create_new_password_page.dart';
-import 'package:flutter_car_marketplace_app/app/modules/auth/forgot&resetpassword/verify_page.dart';
-import 'package:flutter_car_marketplace_app/app/modules/home/specialoffers/special_offers_page.dart';
-import 'package:flutter_car_marketplace_app/app/modules/home/topdeals/top_deals_page.dart';
 import 'package:get/get.dart';
 import '../modules/auth/auth_binding.dart';
 import '../modules/auth/auth_page.dart';
+import '../modules/auth/forgot&resetpassword/create_new_password_page.dart';
 import '../modules/auth/forgot&resetpassword/forgot_reset_password.dart';
+import '../modules/auth/forgot&resetpassword/verify_page.dart';
 import '../modules/auth/signin/signin_page.dart';
 import '../modules/auth/signup/signup_page.dart';
+import '../modules/details/details_binding.dart';
+import '../modules/details/details_page.dart';
+import '../modules/details/views/makeanoffer/make_an_offer.dart';
+import '../modules/details/views/reviews/reviews_page.dart';
+import '../modules/details/views/roomchat/room_chat.dart';
 import '../modules/home/home_binding.dart';
 import '../modules/home/home_page.dart';
 import '../modules/home/mywishlist/mywishlist_page.dart';
 import '../modules/home/notifications/notifications_page.dart';
+import '../modules/home/specialoffers/special_offers_page.dart';
+import '../modules/home/topdeals/top_deals_page.dart';
 import '../modules/main/main_binding.dart';
 import '../modules/main/main_page.dart';
 import '../modules/onboarding/onboarding_screen.dart';
@@ -86,6 +91,26 @@ class AppPages {
       name: AppRouters.topDeals,
       page: () => const TopDealsPage(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: AppRouters.details,
+      page: () => const DetailsPage(),
+      binding: DetailsBinding(),
+    ),
+    GetPage(
+      name: AppRouters.reviews,
+      page: () => const ReviewsPage(),
+      binding: DetailsBinding(),
+    ),
+    GetPage(
+      name: AppRouters.roomChat,
+      page: () => const RoomChatPage(),
+      binding: DetailsBinding(),
+    ),
+    GetPage(
+      name: AppRouters.makeAnOffer,
+      page: () => const MakeAnOfferPage(),
+      binding: DetailsBinding(),
     ),
   ];
 }
