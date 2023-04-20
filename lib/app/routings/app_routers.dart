@@ -18,4 +18,5 @@ abstract class AppRouters {
   static const roomChat = '/roomChat';
   static const makeAnOffer = '/makeAnOffer';
   static const order = '/order';
+  static const inbox = '/inbox';
 }

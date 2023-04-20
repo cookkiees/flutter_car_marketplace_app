@@ -1,3 +1,5 @@
+import 'package:flutter_car_marketplace_app/app/modules/inbox/Inbox_binding.dart';
+import 'package:flutter_car_marketplace_app/app/modules/inbox/inbox_page.dart';
 import 'package:flutter_car_marketplace_app/app/modules/order/order_binding.dart';
 import 'package:flutter_car_marketplace_app/app/modules/order/order_page.dart';
 import 'package:get/get.dart';
@@ -118,6 +120,11 @@ class AppPages {
       name: AppRouters.order,
       page: () => const OrderPage(),
       binding: OrderBinding(),
+    ),
+    GetPage(
+      name: AppRouters.inbox,
+      page: () => const InboxPage(),
+      binding: InboxBinding(),
     ),
   ];
 }
