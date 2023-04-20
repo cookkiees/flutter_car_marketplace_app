@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_car_marketplace_app/app/modules/home/home_page.dart';
+import 'package:flutter_car_marketplace_app/app/modules/inbox/inbox_page.dart';
 import 'package:flutter_car_marketplace_app/app/modules/order/order_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -20,7 +21,7 @@ class MainPage extends StatelessWidget {
           children: [
             const HomePage(),
             const OrderPage(),
-            Container(),
+            const InboxPage(),
             Container(),
             Container(),
           ],
