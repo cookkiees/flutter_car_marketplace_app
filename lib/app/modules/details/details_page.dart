@@ -21,8 +21,8 @@ class DetailsPage extends GetView<DetailsController> {
       appBar: PreferredSize(
         preferredSize: const Size(double.infinity, 60),
         child: AppBarWidget(
-          title: Row(
-            children: const [
+          title: const Row(
+            children: [
               Text(
                 "",
                 style: TextStyle(color: Colors.black),
@@ -179,9 +179,9 @@ class DetailsPage extends GetView<DetailsController> {
                 ),
                 Row(
                   children: [
-                    Column(
+                    const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(
                           "Price",
                           style: TextStyle(

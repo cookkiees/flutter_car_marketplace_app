@@ -3,7 +3,6 @@ import 'package:flutter_car_marketplace_app/app/modules/wallet/wallet_controller
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-import '../components/appbar_widget.dart';
 
 class WalletPage extends GetView<WalletController> {
   const WalletPage({super.key});
@@ -15,8 +14,8 @@ class WalletPage extends GetView<WalletController> {
         elevation: 0,
         backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
-        title: Row(
-          children: const [
+        title: const Row(
+          children: [
             Text(
               "My E-Wallet",
               style: TextStyle(color: Colors.black),
@@ -40,8 +39,8 @@ class WalletPage extends GetView<WalletController> {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: const [],
+          child: const Column(
+            children: [],
           ),
         ),
       ),

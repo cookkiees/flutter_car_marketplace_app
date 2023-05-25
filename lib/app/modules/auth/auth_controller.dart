@@ -23,8 +23,6 @@ class AuthController extends GetxController {
 
   @override
   void onClose() {
-    verifyController.dispose();
-
     super.onClose();
     verifyFocusNode.dispose();
   }

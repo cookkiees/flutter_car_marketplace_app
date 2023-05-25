@@ -14,8 +14,8 @@ class SpecialOffersPage extends GetView<HomeController> {
         preferredSize: const Size(double.infinity, 60),
         child: AppBarWidget(
           backgroundColor: Colors.grey.shade50,
-          title: Row(
-            children: const [
+          title: const Row(
+            children: [
               Text(
                 "Special Offers",
                 style: TextStyle(color: Colors.black),
@@ -36,8 +36,8 @@ class SpecialOffersPage extends GetView<HomeController> {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: const [
+          child: const Column(
+            children: [
               SpecialOffersSCarouselSliderWidget(
                 initilaPage: 0,
                 autoPlay: false,

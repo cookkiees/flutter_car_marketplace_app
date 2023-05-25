@@ -12,11 +12,11 @@ class ShippingAddressPage extends GetView<DetailsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size(double.infinity, 60),
+      appBar: const PreferredSize(
+        preferredSize: Size(double.infinity, 60),
         child: AppBarWidget(
           title: Row(
-            children: const [
+            children: [
               Text(
                 "Shipping Address",
                 style: TextStyle(color: Colors.black),

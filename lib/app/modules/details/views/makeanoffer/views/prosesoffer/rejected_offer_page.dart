@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_car_marketplace_app/app/modules/auth/widgets/default_buttoon_widget.dart';
-import 'package:flutter_car_marketplace_app/app/modules/details/views/makeanoffer/make_an_offer.dart';
 import 'package:flutter_car_marketplace_app/app/routings/app_routers.dart';
 import 'package:get/get.dart';
 
@@ -12,11 +11,11 @@ class RejectedOfferPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size(double.infinity, 60),
+      appBar: const PreferredSize(
+        preferredSize: Size(double.infinity, 60),
         child: AppBarWidget(
           title: Row(
-            children: const [
+            children: [
               Text(
                 "Make an Offer",
                 style: TextStyle(color: Colors.black),

@@ -16,8 +16,8 @@ class TopDealsPage extends GetView<HomeController> {
         preferredSize: const Size(double.infinity, 60),
         child: AppBarWidget(
           backgroundColor: Colors.grey.shade50,
-          title: Row(
-            children: const [
+          title: const Row(
+            children: [
               Text(
                 "Top Deals",
                 style: TextStyle(color: Colors.black),
@@ -63,8 +63,8 @@ class TopDealsPage extends GetView<HomeController> {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: const [TabbarAndTabbarViewsWidget()],
+          child: const Column(
+            children: [TabbarAndTabbarViewsWidget()],
           ),
         ),
       ),

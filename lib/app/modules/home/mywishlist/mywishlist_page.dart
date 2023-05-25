@@ -17,8 +17,8 @@ class MyWishlistPage extends GetView<HomeController> {
         preferredSize: const Size(double.infinity, 60),
         child: AppBarWidget(
           backgroundColor: Colors.grey.shade50,
-          title: Row(
-            children: const [
+          title: const Row(
+            children: [
               Text(
                 "My Wishlist",
                 style: TextStyle(color: Colors.black),

@@ -18,8 +18,8 @@ class OrderPage extends GetView<OrderController> {
           elevation: 0,
           backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
-          title: Row(
-            children: const [
+          title: const Row(
+            children: [
               Text(
                 "My Order",
                 style: TextStyle(color: Colors.black),

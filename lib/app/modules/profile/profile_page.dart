@@ -14,8 +14,8 @@ class ProfilePage extends GetView<ProfileController> {
         elevation: 0,
         backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
-        title: Row(
-          children: const [
+        title: const Row(
+          children: [
             Text(
               "Profile",
               style: TextStyle(color: Colors.black),

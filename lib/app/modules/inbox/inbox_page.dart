@@ -3,7 +3,6 @@ import 'package:flutter_car_marketplace_app/app/modules/order/order_controller.d
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-import '../components/box_car_order_widget.dart';
 
 class InboxPage extends GetView<OrderController> {
   const InboxPage({super.key});
@@ -18,8 +17,8 @@ class InboxPage extends GetView<OrderController> {
           elevation: 0,
           backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
-          title: Row(
-            children: const [
+          title: const Row(
+            children: [
               Text(
                 "Inbox",
                 style: TextStyle(color: Colors.black),

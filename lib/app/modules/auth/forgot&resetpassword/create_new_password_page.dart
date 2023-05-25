@@ -16,11 +16,11 @@ class CreateNewPasswordPage extends GetView<AuthController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PreferredSize(
-        preferredSize: const Size(double.infinity, 60),
+      appBar: const PreferredSize(
+        preferredSize: Size(double.infinity, 60),
         child: AppBarWidget(
           title: Row(
-            children: const [
+            children: [
               Text(
                 "Create New Password",
                 style: TextStyle(color: Colors.black),

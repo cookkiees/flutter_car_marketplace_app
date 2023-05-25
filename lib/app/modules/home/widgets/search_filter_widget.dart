@@ -164,8 +164,8 @@ class SearchFilterWidget extends GetView<HomeController> {
               ),
             ),
           ),
-          Row(
-            children: const [
+          const Row(
+            children: [
               Expanded(child: DefaultButtonWidget(title: "Reset")),
               SizedBox(width: 16),
               Expanded(child: DefaultButtonWidget(title: "Aplly"))

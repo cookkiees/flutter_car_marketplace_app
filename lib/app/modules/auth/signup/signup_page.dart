@@ -90,9 +90,9 @@ class SignUpPage extends GetView<AuthController> {
                   centerFlex: 3,
                 ),
                 const SizedBox(height: 32),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: const [
+                  children: [
                     NormalButtonWidget(
                       icons: "assets/icons/facebook.svg",
                     ),

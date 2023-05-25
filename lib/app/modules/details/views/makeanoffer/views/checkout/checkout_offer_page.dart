@@ -18,8 +18,8 @@ class CheckoutOfferPage extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: const Size(double.infinity, 60),
         child: AppBarWidget(
-          title: Row(
-            children: const [
+          title: const Row(
+            children: [
               Text(
                 "Checkout",
                 style: TextStyle(color: Colors.black),
@@ -122,9 +122,9 @@ class CheckoutOfferPage extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
                 ),
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
+                  children: [
                     TableWidget(
                       title: "Amount",
                       price: "\$ 170.000",

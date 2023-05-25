@@ -10,8 +10,8 @@ class DescriptionDetailsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         Padding(
           padding: EdgeInsets.symmetric(vertical: 16),
           child: HeaderTextWidget(

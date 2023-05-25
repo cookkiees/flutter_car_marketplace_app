@@ -47,12 +47,12 @@ class SpecialOffersSCarouselSliderWidget extends GetView<HomeController> {
                     ),
                     child: Stack(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 16),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
+                            children: [
                               Text(
                                 "20 %",
                                 style: TextStyle(

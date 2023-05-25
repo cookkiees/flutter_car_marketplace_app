@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import '../../auth/widgets/default_buttoon_widget.dart';
 import '../../components/rating_builder_widget.dart';

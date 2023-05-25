@@ -70,8 +70,8 @@ class MainPage extends StatelessWidget {
               icon: Padding(
                 padding: const EdgeInsets.only(top: 12),
                 child: controller.tabIndex == 2
-                    ? SvgPicture.asset("assets/icons/chat-1.svg")
-                    : SvgPicture.asset("assets/icons/chat-2.svg"),
+                    ? const Icon(Icons.chat)
+                    : const Icon(Icons.chat_outlined),
               ),
               label: 'Inbox',
             ),
